@@ -1,0 +1,15 @@
+Place these four files (downloaded from your Colab notebook) here:
+
+  svm_model.pkl
+  scaler.pkl
+  pca.pkl
+  label_map.pkl
+
+The notebook already produces exactly these via:
+
+  joblib.dump(svm, "svm_model.pkl")
+  joblib.dump(scaler, "scaler.pkl")
+  joblib.dump(pca, "pca.pkl")
+  joblib.dump(label_map, "label_map.pkl")
+
+Nothing else is needed — app.py loads them automatically from this folder.
